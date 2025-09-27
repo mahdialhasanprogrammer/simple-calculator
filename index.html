@@ -3,9 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Calculator</title>
   </head>
-  <body>
-    hello world
+  <body class="flex justify-center">
+    <div id="Calculator" class="max-w-[400px] p-5 bg-gray-800">
+      <input
+        class="w-full h-[80px] bg-gray-700 border-none text-white text-3xl font-bold pl-3 tracking-wider"
+        id="display"
+        type="text"
+      />
+      <div id="keys" class="grid grid-cols-4 gap-5 mt-5">
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-orange-400 text-white hover:bg-orange-500 hover:bg-orange-500"
+          onclick="appendToDisplay('+')"
+          type="button"
+        >
+          +
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('7')"
+          type="button"
+        >
+          7
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('8')"
+          type="button"
+        >
+          8
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('9')"
+          type="button"
+        >
+          9
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-orange-400 text-white hover:bg-orange-500"
+          onclick="appendToDisplay('-')"
+          type="button"
+        >
+          -
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('4')"
+          type="button"
+        >
+          4
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('5')"
+          type="button"
+        >
+          5
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('6')"
+          type="button"
+        >
+          6
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-orange-400 text-white hover:bg-orange-500"
+          onclick="appendToDisplay('*')"
+          type="button"
+        >
+          *
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('1')"
+          type="button"
+        >
+          1
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('2')"
+          type="button"
+        >
+          2
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('3')"
+          type="button"
+        >
+          3
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-orange-400 text-white hover:bg-orange-500"
+          onclick="appendToDisplay('/')"
+          type="button"
+        >
+          /
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('0')"
+          type="button"
+        >
+          0
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="appendToDisplay('.')"
+          type="button"
+        >
+          .
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-gray-500 text-white hover:bg-gray-700 active:bg-gray-800"
+          onclick="calculateDisplay()"
+          type="button"
+        >
+          =
+        </button>
+        <button
+          class="w-[75px] h-[75px] rounded-full font-bold text-4xl bg-orange-400 text-white hover:bg-orange-500"
+          onclick="clearDisplay()"
+          type="button"
+        >
+          C
+        </button>
+      </div>
+    </div>
+    <script src="interective.js"></script>
   </body>
 </html>
